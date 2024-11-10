@@ -2,49 +2,51 @@ import React from "react";
 
 const Signup = () => {
   return (
-    <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12 bg-gray-100 rounded shadow-md justify-center">
-      <h1 className="text-3xl font-bold mb-4">Create Your Account</h1>
-      <p className="text-lg text-gray-600 mb-6">
-        Get started with our platform today!
-      </p>
-      <form>
-        <label className="block mb-2">
-          Email
-          <input
-            type="email"
-            className="block w-full p-2 pl-10 text-sm text-gray-700 border border-gray-300 rounded"
-            placeholder="example@email.com"
-          />
-        </label>
-        <label className="block mb-2">
-          Password
-          <input
-            type="password"
-            className="block w-full p-2 pl-10 text-sm text-gray-700 border border-gray-300 rounded"
-            placeholder="Password"
-          />
-        </label>
-        <label className="block mb-2">
-          Confirm Password
-          <input
-            type="password"
-            className="block w-full p-2 pl-10 text-sm text-gray-700 border border-gray-300 rounded"
-            placeholder="Confirm Password"
-          />
-        </label>
-        <button
-          className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-full"
-          type="submit"
-        >
-          Signup
-        </button>
-        <p className="text-sm text-gray-600 mt-4">
-          Already have an account?{" "}
-          <a href="#" className="text-orange-500">
-            Login
-          </a>
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r">
+      <div className="w-full max-w-md p-8 mx-auto bg-white rounded-lg shadow-lg">
+        <h1 className="mb-6 text-3xl font-bold text-center text-gray-800">Create Your Account</h1>
+        <p className="mb-8 text-lg text-center text-gray-600">
+          Get started with our platform today!
         </p>
-      </form>
+        <form>
+          <label className="block mb-4">
+            <span className="text-gray-700">Email</span>
+            <input
+              type="email"
+              className="block w-full p-3 mt-1 text-gray-700 border border-gray-300 rounded focus:border-blue-400 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              placeholder="example@email.com"
+            />
+          </label>
+          <label className="block mb-4">
+            <span className="text-gray-700">Password</span>
+            <input
+              type="password"
+              className="block w-full p-3 mt-1 text-gray-700 border border-gray-300 rounded focus:border-blue-400 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              placeholder="Password"
+            />
+          </label>
+          <label className="block mb-4">
+            <span className="text-gray-700">Confirm Password</span>
+            <input
+              type="password"
+              className="block w-full p-3 mt-1 text-gray-700 border border-gray-300 rounded focus:border-blue-400 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              placeholder="Confirm Password"
+            />
+          </label>
+          <button
+            className="w-full py-3 mt-6 font-semibold text-white bg-orange-500 rounded-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-50"
+            type="submit"
+          >
+            Signup
+          </button>
+          <p className="mt-6 text-sm text-center text-gray-600">
+            Already have an account?{" "}
+            <a href="/login" className="text-orange-500 hover:text-orange-700">
+              Login
+            </a>
+          </p>
+        </form>
+      </div>
     </div>
   );
 };
